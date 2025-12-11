@@ -25,6 +25,12 @@ body {
     font-weight: bold;
 }
 
+.navbar .logo img {
+    max-height: 40px;
+    height: auto;
+    width: auto;
+}
+
 .navbar .nav-links {
     list-style: none;
     display: flex;
