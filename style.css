@@ -55,7 +55,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: cflex-start;
-    padding-top: 140px;
+    padding-top: 100px;
+    display: inline-block;
     text-align: left;
     color: #273153;
     padding-left: 60px;
@@ -67,7 +68,6 @@ body {
 }
 
 .hero button {
-    display: inline-block;
     padding: 8px 35px;
     border: none;
     border-radius: 5px;
