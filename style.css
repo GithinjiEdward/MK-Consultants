@@ -54,7 +54,8 @@ body {
                 url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: cflex-start;
+    padding-top: 150px;
     text-align: left;
     color: #273153;
     padding-left: 60px;
