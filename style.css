@@ -56,13 +56,14 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    color: white;
+    color: red;
     padding-left: 60px;
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
+    color: #273153;
 }
 
 .hero button {
