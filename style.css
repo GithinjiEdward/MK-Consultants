@@ -102,6 +102,30 @@ body {
     border-radius: 10px;
 }
 
+/* Style for the icon inside the service card */
+.service-card .service-icon {
+    /* Set a small, consistent size for the icon */
+    width: 60px; 
+    height: auto;
+    
+    /* Add space below the icon to separate it from the heading */
+    margin-bottom: 15px; 
+    
+    /* Ensure the image is treated as a block for proper vertical spacing */
+    display: block; 
+    
+    /* Center the image within the service card (since it's a block element) */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Optional: Add a slight hover effect to the entire card */
+.service-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
 /* ABOUT */
 .about {
     padding: 60px;
