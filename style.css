@@ -104,7 +104,63 @@ body {
     text-transform: uppercase;
 }
 
-/* SERVICES */
+/* --------------------------------------
+   WHY PARTNER WITH US STYLES
+   -------------------------------------- */
+.partner-us-section {
+    padding: 60px 40px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.partner-us-section h2 {
+    font-size: 32px;
+    color: #273153;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.value-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: #f0f6ff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 3px solid #d9c179;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.value-card h3 {
+    color: #273153; 
+    margin-top: 5px; 
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.partner-icon {
+    font-size: 40px;
+    color: #d9c179; /* Gold accent color */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.value-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+
+/* --------------------------------------
+   SERVICES
+   -------------------------------------- */
 .services {
     padding: 60px;
     background: white;
