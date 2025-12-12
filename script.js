@@ -39,3 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+    // ------------------------------------------------------------------
+    // 3. FOOTER HANDLER
+    // ------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    // ... existing content loader, smooth scroll, form handler ...
+
+    // Footer: Set the current year
+    const currentYear = document.getElementById('current-year');
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+});
