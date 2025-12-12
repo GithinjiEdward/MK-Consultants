@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 7px 40px;
     background: #d9d9d9;
     color: #273153;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar .nav-links li {
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .navbar .nav-links a {
