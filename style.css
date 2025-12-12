@@ -105,9 +105,8 @@ body {
 /* Style for the icon inside the service card */
 .service-card .service-icon {
     /* Set a small, consistent size for the icon */
-    max-height: 5px; 
-    height: auto;
-    width: auto;
+    height: 5px; 
+    width: 5px;
     
     /* Add space below the icon to separate it from the heading */
     margin-bottom: 15px; 
