@@ -346,3 +346,117 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #4A4A4A; /* Light separator line */
 }
+
+/* ======================================
+   MEDIA QUERIES FOR MOBILE & TABLETS (Max Width 768px)
+   ====================================== */
+@media (max-width: 768px) {
+    
+    /* --------------------------------------
+       GENERAL ADJUSTMENTS 
+       -------------------------------------- */
+    /* Reduce global padding */
+    .partner-us-section, .services, .about, .contact, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Reduce large headings */
+    .hero h1, 
+    .partner-us-section h2, 
+    .services h2, 
+    .about h2, 
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    /* --------------------------------------
+       NAVBAR 
+       -------------------------------------- */
+    .navbar {
+        flex-direction: column; /* Stack the logo and links */
+        padding: 15px 20px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column; /* Stack the links vertically */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px 0; /* Less margin between stacked links */
+    }
+    
+    /* --------------------------------------
+       HERO SECTION 
+       -------------------------------------- */
+    .hero {
+        height: 60vh; /* Make the hero area shorter */
+        padding-top: 100px; /* Reduce top padding */
+        padding-left: 20px; /* Reduce left padding */
+        text-align: center; /* Center text on mobile for better balance */
+    }
+
+    /* If we center the text, the Gold Bar automatically centers */
+    .hero p {
+        margin-bottom: 20px;
+    }
+    
+    /* --------------------------------------
+       CARD SECTIONS (Why Partner & Services)
+       -------------------------------------- */
+    /* These sections already use 'repeat(auto-fit, minmax(250px, 1fr))' 
+       so they will naturally reduce to 2 columns, but let's ensure it stacks to 1 
+       on a very small screen. */
+       
+    .value-container, .service-container {
+        /* On small tablets, force a single column for maximum readability */
+        grid-template-columns: 1fr; 
+    }
+    
+    /* --------------------------------------
+       FOOTER 
+       -------------------------------------- */
+    .footer-container {
+        flex-direction: column; /* Stack footer columns vertically */
+    }
+    
+    .footer-column {
+        min-width: 100%; /* Columns take full width */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .footer-column h3 {
+        text-align: center;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .hero h1 {
+        font-size: 32px; /* Reduce main heading size further */
+    }
+
+    .hero p {
+        font-size: 16px; /* Reduce sub-heading size */
+    }
+
+    /* Ensure icons don't dominate */
+    .partner-icon, .service-card .service-icon {
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Tighten up padding */
+    .partner-us-section, .services, .about, .contact, footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
