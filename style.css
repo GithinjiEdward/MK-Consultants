@@ -76,7 +76,7 @@ body {
 
 .hero-bar-text {
     display: inline-block;
-
+    
     background: #d9c179;
     color: #273153;
     font-size: 18px;
@@ -88,12 +88,12 @@ body {
 .hero button {
    
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #d9c179;
     margin-top: 20px;
-    margin-left: 800px;
+    margin-left: 80px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     color: #273153;
     text-transform: uppercase;
