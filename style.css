@@ -76,7 +76,7 @@ body {
 
 .hero-bar-text {
     display: inline-block;
-    padding: 8px 200px;
+    padding: 80px 200px;
     background: #d9c179;
     color: #273153;
     font-size: 18px;
@@ -86,7 +86,7 @@ body {
 }
 
 .hero button {
-    padding: 8px 500px;
+    padding: 80px 500px;
     border: none;
     border-radius: 5px;
     background: #d9c179;
