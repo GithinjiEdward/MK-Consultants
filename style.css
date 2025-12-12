@@ -59,7 +59,7 @@ body {
     display: inline-block;
     text-align: left;
     color: #273153;
-    padding-right: 100px;
+    padding-right: 400px;
 }
 
 .hero h1 {
@@ -103,8 +103,8 @@ body {
 /* Style for the icon inside the service card */
 .service-card .service-icon {
     /* Set a small, consistent size for the icon */
-    height: 250px; 
-    width: 250px;
+    height: 200px; 
+    width: 200px;
     
     /* Add space below the icon to separate it from the heading */
     margin-bottom: 15px; 
