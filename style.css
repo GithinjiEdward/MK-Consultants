@@ -75,11 +75,7 @@ body {
 }
 
 .hero-bar-text {
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 8px 15px;
+
     
     background: #d9c179;
     color: #273153;
@@ -90,7 +86,11 @@ body {
 }
 
 .hero button {
-
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 15px;
     
     border: none;
     border-radius: 10px;
