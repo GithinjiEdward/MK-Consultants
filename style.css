@@ -215,9 +215,25 @@ body {
               ABOUT
    -------------------------------------- */
 .about {
-    padding: 60px;
-    background: #f0f6ff;
+    padding: 40px 40px; /* Generous vertical padding */
+    background: #f0f6ff; /* A slightly different, soft light blue background */
     text-align: center;
+    max-width: 100%;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #273153; /* Deep Navy Heading Color */
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6; /* Improves readability for blocks of text */
+    max-width: 800px; /* Constrains the width of the text block for better reading on large screens */
+    margin: 0 auto; /* Centers the text block */
+    color: #333; /* Standard dark text color */
 }
 
 /* --------------------------------------
