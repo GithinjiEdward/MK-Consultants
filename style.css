@@ -76,7 +76,7 @@ body {
 
 .hero-bar-text {
     display: inline-block;
-    padding: 8px 50px;
+    padding: 8px 18px;
     background: #d9c179;
     color: #273153;
     font-size: 18px;
@@ -86,7 +86,7 @@ body {
 }
 
 .hero button {
-    padding: 8px 35px;
+    padding: 8px 50px;
     border: none;
     border-radius: 5px;
     background: #d9c179;
@@ -96,6 +96,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     color: #273153;
+    text-transform: uppercase;
 }
 
 /* SERVICES */
