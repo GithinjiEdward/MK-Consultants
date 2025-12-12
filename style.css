@@ -302,6 +302,18 @@ footer {
     margin-top: 20px;
 }
 
+.pre-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* ======================================
    MEDIA QUERIES FOR MOBILE & TABLETS (Max Width 768px)
    ====================================== */
