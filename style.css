@@ -182,7 +182,7 @@ body {
 }
 
 .service-card {
-    background: #eef3f9;
+    background: #eef3f9; /* Soft light blue/gray background */
     padding: 25px;
     border-radius: 10px;
 }
