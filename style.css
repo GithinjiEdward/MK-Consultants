@@ -86,7 +86,7 @@ body {
 }
 
 .hero button {
-   
+    padding-right: 100px;
     border: none;
     border-radius: 10px;
     background: #d9c179;
