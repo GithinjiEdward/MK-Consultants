@@ -112,7 +112,7 @@ body {
          WHY PARTNER WITH US STYLES
    -------------------------------------- */
 .partner-us-section {
-    padding: 60px 40px;
+    padding: 60px 40px 30px 40px;
     background: #ffffff;
     text-align: center;
 }
@@ -166,7 +166,7 @@ body {
                SERVICES
    -------------------------------------- */
 .services {
-    padding: 60px;
+    padding: 30px 60px 60px 60px;
     background: white;
     text-align: center;
 }
