@@ -49,7 +49,6 @@ body {
 /* HERO */
 .hero {
     height: 86vh;
-    padding-right: 60px;
     background: linear-gradient(to bottom, #d9d9d9, #d9d9d99a),
                 url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover;
     background-repeat: no-repeat;
@@ -105,8 +104,8 @@ body {
 /* Style for the icon inside the service card */
 .service-card .service-icon {
     /* Set a small, consistent size for the icon */
-    height: 5px; 
-    width: 5px;
+    height: 15px; 
+    width: 15px;
     
     /* Add space below the icon to separate it from the heading */
     margin-bottom: 15px; 
