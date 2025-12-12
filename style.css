@@ -289,7 +289,7 @@ body {
 footer {
     background: #273153; /* Deep Navy Blue (Primary Brand Color) */
     color: #fff; /* White text for contrast */
-    padding: 40px 60px 20px 60px; /* Padding for the main content area */
+    padding: 30px 60px 15px 60px; /* Padding for the main content area */
     font-size: 16px;
 }
 
@@ -298,7 +298,7 @@ footer {
     flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 20px auto;
 }
 
 .footer-column {
@@ -343,7 +343,7 @@ footer {
 /* Bottom Bar (Copyright) */
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid #4A4A4A; /* Light separator line */
 }
 
