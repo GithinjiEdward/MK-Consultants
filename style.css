@@ -48,8 +48,8 @@ body {
 
 /* HERO */
 .hero {
-    height: 84vh;
-    padding-left: 80px;
+    height: 85vh;
+    padding-left: 150px;
     background: linear-gradient(to bottom, #d9d9d9, #d9d9d99a),
                 url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover;
     background-repeat: no-repeat;
