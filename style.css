@@ -237,12 +237,18 @@ body {
 }
 
 /* --------------------------------------
-            CONTACT
+            CONTACT US SECTION
    -------------------------------------- */
 .contact {
     padding: 60px;
     background: white;
     text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #273153; /* Deep Navy Heading Color */
+    margin-bottom: 30px;
 }
 
 .contact form {
@@ -252,10 +258,15 @@ body {
     flex-direction: column;
 }
 
+/* Styling the input fields (Name, Email, Message) */
 .contact input, .contact textarea {
     margin-bottom: 15px;
     padding: 12px;
     border: 1px solid #ccc;
+}
+
+.contact textarea {
+    resize: vertical; /* Allows resizing only vertically */
 }
 
 .contact button {
@@ -264,4 +275,74 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #002244;
+}
+
+/* --------------------------------------
+   FOOTER STYLES
+   -------------------------------------- */
+footer {
+    background: #273153; /* Deep Navy Blue (Primary Brand Color) */
+    color: #fff; /* White text for contrast */
+    padding: 40px 60px 20px 60px; /* Padding for the main content area */
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+}
+
+.footer-column {
+    padding: 10px;
+    /* Ensure columns take up space but wrap neatly on small screens */
+    flex: 1; 
+    min-width: 200px; /* Minimum width before wrapping */
+}
+
+.footer-column h3 {
+    color: #d9c179; /* Gold accent for headings */
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Links and Social Media */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #d9c179; /* Gold accent on hover */
+}
+
+.social-links a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+/* Bottom Bar (Copyright) */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #4A4A4A; /* Light separator line */
 }
