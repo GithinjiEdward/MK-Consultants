@@ -58,12 +58,7 @@ body {
   color: var(--accent); 
 } 
 
-.hamburger { 
-  display: none; 
-  font-size: 28px; 
-  cursor: pointer; 
-  color: var(--primary); 
-}
+
 /* ============================================================
                   HAMBURGER MENU (HIDDEN DESKTOP)
 ============================================================ */
