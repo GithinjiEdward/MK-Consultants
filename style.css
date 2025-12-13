@@ -69,8 +69,8 @@ body {
   width: 25px;
   height: 3px;
   background: var(--primary);
-  border-radius: 3px;
-  transition: all 0.3s ease;
+  border-radius: 2px;
+  transition: all var(--transition);
 }
 
 /* ============================================================ 
@@ -117,24 +117,24 @@ body {
 ============================================================ */ 
 .partner-us-section { 
   background: var(--white); 
-  padding: 60px 40px; 
+  padding: 50px 40px; 
   text-align: center; 
 } 
 .partner-us-section h2 { 
-  font-size: 32px; 
+  font-size: 30px; 
   color: var(--primary); 
-  margin-bottom: 40px; 
+  margin-bottom: 30px; 
 } 
 .value-container { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
-  gap: 25px; 
+  gap: 20px; 
   max-width: 1200px; 
   margin: auto; 
 } 
 .value-card { 
   background: var(--card-bg); 
-  padding: 30px; 
+  padding: 25px; 
   border-radius: var(--radius); 
   border-bottom: 4px solid var(--accent); 
   transition: var(--transition); 
@@ -144,9 +144,9 @@ body {
   box-shadow: var(--shadow); 
 } 
 .partner-icon { 
-  font-size: 40px; 
+  font-size: 36px; 
   color: var(--accent); 
-  margin-bottom: 15px; 
+  margin-bottom: 12px; 
 } 
 /* ============================================================ 
                 SERVICES SECTION 
@@ -154,36 +154,36 @@ body {
 .services { 
   background: var(--white); 
   text-align: center; 
-  padding: 60px 40px; 
+  padding: 50px 40px; 
 } 
 .services h2 { 
-  font-size: 32px; 
+  font-size: 30px; 
   color: var(--primary); 
-  margin-bottom: 35px; 
+  margin-bottom: 30px; 
 } 
 .service-container { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); 
-  gap: 25px; 
+  gap: 20px; 
   max-width: 1200px; 
   margin: auto; 
 } 
 .service-card { 
   background: var(--service-bg); 
-  padding: 25px; 
+  padding: 20px; 
   border-radius: var(--radius); 
   transition: var(--transition); 
 } 
 .service-card:hover { 
-  transform: translateY(-4px); 
+  transform: translateY(-3px); 
   box-shadow: var(--shadow); 
 } 
 .service-icon { 
-  width: 50px; 
-  height: 50px; 
+  width: 45px; 
+  height: 45px; 
   margin: auto; 
   display: block; 
-  margin-bottom: 15px; 
+  margin-bottom: 12px; 
 } 
 .service-hr {
   background: var(--hr-color);
@@ -217,33 +217,41 @@ body {
                 CONTACT SECTION 
 ============================================================ */ 
 .contact { 
-  padding: 60px 40px; 
+  padding: 35px 30px; 
   text-align: center; 
   background: var(--white); 
 } 
+.contact h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
 .contact form { 
-  max-width: 420px; 
+  max-width: 360px; 
   margin: auto; 
   display: flex; 
   flex-direction: column; 
-  gap: 15px; 
+  gap: 10px; 
 } 
 .contact input, .contact textarea {
-  padding: 12px; 
+  padding: 10px; 
   border-radius: 5px; 
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
+  font-size: 14px;
 } 
 .contact textarea { 
   resize: vertical; 
+  min-height: 70px;
 } 
 .contact button { 
-  padding: 12px; 
+  padding: 10px; 
   background: var(--primary); 
   color: var(--white); 
   border: none; 
   border-radius: var(--radius); 
   cursor: pointer; 
-  transition: background var(--transition); 
+  transition: background var(--transition);
+  font-size: 14px;
 } 
 .contact button:hover { 
   background: #1a223d; 
@@ -254,40 +262,40 @@ body {
 footer { 
   background: var(--primary);
   color: var(--white); 
-  padding: 40px 40px 20px; 
+  padding: 20px 40px;
 } 
 .footer-container { 
   max-width: 1200px;
   margin: auto; 
   display: flex; 
   flex-wrap: wrap; 
-  gap: 40px; 
+  gap: 25px; 
   justify-content: space-between; 
 } 
 .footer-column { 
-  min-width: 220px; 
+  min-width: 160px; 
 } 
 .footer-column h3 { 
   color: var(--accent); 
-  margin-bottom: 15px; 
+  margin-bottom: 8px;
 } 
 .footer-column a { 
   color: var(--white); 
   text-decoration: none; 
-  transition: color var(--transition); 
+  transition: color var(--transition);
 } 
 .footer-column a:hover { 
   color: var(--accent); 
 } 
 .social-links i { 
-  font-size: 24px; 
-  margin-right: 15px; 
+  font-size: 18px; 
+  margin-right: 10px; 
 } 
 .footer-bottom { 
   border-top: 1px solid #4a4a4a; 
   text-align: center; 
-  padding-top: 15px;
-  margin-top: 20px; 
+  padding-top: 8px;
+  margin-top: 12px;
 } 
 /* ============================================================
    RESPONSIVE – MOBILE WITH HAMBURGER
@@ -316,13 +324,13 @@ footer {
   display: flex;
 }
   .hero {
-    padding: 40px 20px;
+    padding: 35px 20px;
     text-align: center;
     height: 70vh;
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .hero p {
@@ -337,24 +345,43 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+    .contact { 
+    padding: 30px 20px; 
+  } 
+  .contact h2 { 
+    font-size: 24px; 
+    margin-bottom: 18px; 
+  } 
+  .contact form { 
+    gap: 8px; 
+  } 
+  .contact input, 
+  .contact textarea, 
+  .contact button { 
+    font-size: 13px; 
+    padding: 8px; 
+  } 
+  .contact textarea { 
+    min-height: 65px; 
+  } 
 }
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .partner-icon,
   .service-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 36px;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
   }
 
   .partner-us-section,
   .services,
   .about,
   .contact {
-    padding: 40px 20px;
+    padding: 35px 20px;
   }
 }
