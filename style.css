@@ -119,8 +119,14 @@ body {
   background: var(--white); 
   padding: 40px 30px; 
   text-align: center;
-  margin-top: 10px;
 } 
+.partner-us-section p {
+  margin-bottom: 25px;
+}
+.partner-us-section .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+}
 .partner-us-section h2 { 
   font-size: 28px; 
   color: var(--primary); 
