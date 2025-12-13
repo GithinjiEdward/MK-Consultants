@@ -20,7 +20,7 @@ document.querySelectorAll('[data-scroll]').forEach(btn => {
 // ---------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Smooth scrolling for anchor links
+// Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -32,7 +32,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Contact form handler
+/* -----------------------------------------
+       Mobile hamburger menu
+----------------------------------------- */
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu after clicking a link (mobile UX)
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    /* -----------------------------------------
+       Contact form handler
+    ----------------------------------------- */
     const contactForm = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
 
@@ -50,7 +71,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Footer year
+/* -----------------------------------------
+       Footer year
+----------------------------------------- */
     const currentYear = document.getElementById('current-year');
     if (currentYear) {
         currentYear.textContent = new Date().getFullYear();
