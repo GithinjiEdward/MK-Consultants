@@ -8,6 +8,13 @@ function scrollToSection(sectionId) {
     }
 }
 
+document.querySelectorAll('[data-scroll]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        scrollToSection(btn.dataset.scroll);
+    });
+});
+
+
 // ---------------------------------------------------------
 // DOM READY
 // ---------------------------------------------------------
