@@ -164,6 +164,130 @@ body {
   color: var(--accent); 
   margin-bottom: 10px; 
 } 
+
+
+
+.why-choose {
+  background: linear-gradient(135deg, #1c1f3a, #25285a);
+  padding: 100px 8%;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* LEFT: VALUES VISUAL */
+.values-label {
+  background: linear-gradient(90deg, #00c6ff, #6a5cff);
+  padding: 12px 18px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.values-card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: #ffffff;
+  color: #1c1f3a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.values-center {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #00c6ff, #6a5cff);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.values-list {
+  position: absolute;
+  inset: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.values-list li {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.values-list .top { top: 10px; left: 50%; transform: translateX(-50%); }
+.values-list .right { right: 10px; top: 50%; transform: translateY(-50%); }
+.values-list .bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.values-list .left { left: 10px; top: 50%; transform: translateY(-50%); }
+
+.values-list .bottom-right { bottom: 40px; right: 40px; }
+.values-list .bottom-left { bottom: 40px; left: 40px; }
+
+/* RIGHT CONTENT */
+.section-eyebrow {
+  color: #9aa3ff;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.why-content h2 {
+  font-size: 40px;
+  margin: 16px 0 24px;
+}
+
+.why-content p {
+  color: #dcdfff;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+
+.why-cta {
+  display: inline-block;
+  margin-top: 20px;
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.why-cta:hover {
+  transform: translateX(6px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .values-card {
+    margin: 0 auto 40px;
+  }
+
+  .why-content h2 {
+    font-size: 32px;
+  }
+}
+
 /* ============================================================ 
                 SERVICES SECTION 
 ============================================================ */ 
