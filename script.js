@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+<script>
+  document.querySelectorAll('.expandable').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+</script>
+
+  
   // Footer year
   const currentYear = document.getElementById('current-year');
   if(currentYear) currentYear.textContent = new Date().getFullYear();
