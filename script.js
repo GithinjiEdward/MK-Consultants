@@ -52,7 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+setTimeout(() => {
+  const loader = document.getElementById("page-loader");
+  if (loader) loader.remove();
+}, 3000);
 
+  
 
   
 
