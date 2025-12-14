@@ -248,7 +248,7 @@ body {
 
 /* LEFT TEXT */
 .about-tag {
-  color: #6b5cff;
+  color: var(--accent-color);
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
@@ -258,7 +258,7 @@ body {
   font-size: 44px;
   line-height: 1.2;
   margin: 20px 0;
-  color: #111;
+  color: var(--primary-color);
 }
 
 .about-text p {
@@ -283,7 +283,7 @@ body {
 .about-card {
   position: relative;
   height: 180px;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
