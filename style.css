@@ -7,7 +7,7 @@
   --light-bg: #f7f7f7; 
   --card-bg: #f0f6ff; 
   --service-bg: #eef3f9; 
-  --white: #ffffff; 
+  --white: #d9d9d9;
   --text-dark: #333; 
   --transition: 0.3s ease; 
   --radius: 10px; 
@@ -344,6 +344,23 @@ body {
   transform: translateY(-4px);
 }
 
+/* BREADCRUMBS */
+.breadcrumbs {
+  padding: 20px 8%;
+  font-size: 14px;
+  background: #f9fafc;
+}
+
+.breadcrumbs a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumbs span {
+  margin: 0 6px;
+  color: #999;
+}
 
 /* ============================================================ 
                 CONTACT SECTION 
