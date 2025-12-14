@@ -234,6 +234,99 @@ body {
   color: var(--text-dark); 
 } 
 
+.about-page {
+  padding: 100px 8%;
+  background: #ffffff;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT TEXT */
+.about-tag {
+  color: #6b5cff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.about-text h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 20px 0;
+  color: #111;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.about-highlight {
+  font-style: italic;
+  font-weight: 600;
+  color: #222;
+}
+
+/* RIGHT GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  position: relative;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Background placeholders (replace with images later) */
+.about-card.mission {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/mission.jpg") center/cover no-repeat;
+}
+
+.about-card.vision {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/vision.jpg") center/cover no-repeat;
+}
+
+.about-card.team {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/team.jpg") center/cover no-repeat;
+}
+
+.about-card.philosophy {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/philosophy.jpg") center/cover no-repeat;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h1 {
+    font-size: 34px;
+  }
+}
+
+
+
 /* ============================================================ 
                 CONTACT SECTION 
 ============================================================ */ 
