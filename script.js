@@ -15,52 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.getElementById("page-loader");
-  const progressBar = document.getElementById("loader-progress");
-  const percentText = document.getElementById("loader-percent");
-
-  // Safety check
-  if (!loader || !progressBar || !percentText) return;
-
-  let progress = 0;
-
-  const fakeProgress = setInterval(() => {
-    if (progress < 90) {
-      progress += 5;
-      progressBar.style.width = progress + "%";
-      percentText.textContent = progress + "%";
-    }
-  }, 150);
-
-  window.addEventListener("load", () => {
-    clearInterval(fakeProgress);
-
-    progressBar.style.width = "100%";
-    percentText.textContent = "100%";
-
-    setTimeout(() => {
-      loader.style.opacity = "0";
-      loader.style.visibility = "hidden";
-
-      setTimeout(() => {
-        loader.remove();
-      }, 300);
-    }, 300);
-  });
-});
-
-setTimeout(() => {
-  const loader = document.getElementById("page-loader");
-  if (loader) loader.remove();
-}, 3000);
-
-  
-
-  
-
   // Contact form
   const contactForm = document.getElementById('contactForm');
   if(contactForm){
