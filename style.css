@@ -388,6 +388,34 @@ body {
 .contact button:hover { 
   background: #1a223d; 
 } 
+
+/* ============================================================ 
+                EXPANDABLE PANEL
+============================================================ */ 
+.expandable {
+  position: relative;
+}
+
+.expand-content {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.expandable.active .expand-content {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* ============================================================ 
                   FOOTER 
 ============================================================ */ 
