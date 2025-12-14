@@ -15,6 +15,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.getElementById("page-loader");
+  const progressBar = document.getElementById("loader-progress");
+  const percentText = document.getElementById("loader-percent");
+
+  let progress = 0;
+
+  const interval = setInterval(() => {
+    if (progress < 90) {
+      progress += Math.floor(Math.random() * 8) + 2;
+      progressBar.style.width = progress + "%";
+      percentText.textContent = progress + "%";
+    }
+  }, 200);
+
+  window.addEventListener("load", () => {
+    clearInterval(interval);
+    progressBar.style.width = "100%";
+    percentText.textContent = "100%";
+
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      loader.style.pointerEvents = "none";
+      setTimeout(() => loader.remove(), 400);
+    }, 300);
+  });
+});
+
+
+  
+
   // Contact form
   const contactForm = document.getElementById('contactForm');
   if(contactForm){
