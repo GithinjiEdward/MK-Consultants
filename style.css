@@ -236,7 +236,7 @@ body {
 
 .about-page {
   padding: 100px 8%;
-  background: #ffffff;
+  background: var(--white);
 }
 
 .about-container {
