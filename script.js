@@ -17,33 +17,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("page-loader");
   const progressBar = document.getElementById("loader-progress");
   const percentText = document.getElementById("loader-percent");
 
+  // Safety check
+  if (!loader || !progressBar || !percentText) return;
+
   let progress = 0;
 
-  const interval = setInterval(() => {
+  const fakeProgress = setInterval(() => {
     if (progress < 90) {
-      progress += Math.floor(Math.random() * 8) + 2;
+      progress += 5;
       progressBar.style.width = progress + "%";
       percentText.textContent = progress + "%";
     }
-  }, 200);
+  }, 150);
 
   window.addEventListener("load", () => {
-    clearInterval(interval);
+    clearInterval(fakeProgress);
+
     progressBar.style.width = "100%";
     percentText.textContent = "100%";
 
     setTimeout(() => {
       loader.style.opacity = "0";
-      loader.style.pointerEvents = "none";
-      setTimeout(() => loader.remove(), 400);
+      loader.style.visibility = "hidden";
+
+      setTimeout(() => {
+        loader.remove();
+      }, 300);
     }, 300);
   });
 });
+
 
 
   
