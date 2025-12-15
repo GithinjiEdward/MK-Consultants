@@ -251,8 +251,8 @@ body {
 }
 
 .values-logo img {
-  max-width: 55%;
-  max-height: 55%;
+  max-width: 45%;
+  max-height: 45%;
   object-fit: contain;
   border-radius: 14px;
 }
