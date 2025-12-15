@@ -170,14 +170,19 @@ body {
   background: var(--white);
 }
 
-
-
 .why-container {
+  background: var(--service-bg); 
+  padding: 18px;
+  border-radius: var(--radius); 
+  transition: var(--transition);
+  
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
   align-items: center;
 }
+
+
 
 /* LEFT: VALUES VISUAL */
 .values-label {
