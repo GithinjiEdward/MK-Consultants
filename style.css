@@ -341,7 +341,13 @@ body {
 /* ============================================================
                 ABOUT SECTION 
 ============================================================ */ 
-  .about { 
+.about { 
+  background: var(--white); 
+  padding: 40px 30px; 
+  text-align: center;
+} 
+
+  .about-card { 
   background: var(--service-bg); 
   padding: 18px; 
   text-align: center; 
