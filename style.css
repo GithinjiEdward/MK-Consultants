@@ -345,6 +345,7 @@ body {
   background: var(--card-bg); 
   padding: 40px 30px; 
   text-align: center; 
+  border-radius: var(--radius);
 } 
 .about h2 { 
   font-size: 28px; 
