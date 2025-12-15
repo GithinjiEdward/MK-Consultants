@@ -207,25 +207,16 @@ body {
 }
 
 .values-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120px;
-  height: 120px;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #00c6ff, #6a5cff);
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  z-index: 2;
-}
-
-.value-logo {
-  max-width: 70%;
-  max-height: 70%;
-  object-fit: contain;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .values-list {
