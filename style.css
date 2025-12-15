@@ -274,7 +274,7 @@ body {
 
 /* RIGHT CONTENT */
 .section-eyebrow {
-  color: #9aa3ff;
+  color: var(--accent-color);
   font-size: 13px;
   letter-spacing: 1px;
 }
