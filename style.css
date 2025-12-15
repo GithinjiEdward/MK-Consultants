@@ -285,7 +285,7 @@ body {
 }
 
 .why-content p {
-  color: #dcdfff;
+  color: var(--accent-color);
   line-height: 1.8;
   margin-bottom: 18px;
   max-width: 520px;
@@ -294,7 +294,7 @@ body {
 .why-cta {
   display: inline-block;
   margin-top: 20px;
-  color: #00c6ff;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.5px;
