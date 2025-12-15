@@ -400,13 +400,13 @@ body {
 } 
 
 .about-page {
-  padding: 60px 8%;
+  padding: 60px 8% 80px;
   background: var(--white);
 }
 
 .about-container {
   background: var(--service-bg); 
-  padding: 18px;
+  padding: 12px 18px 18px;
   border-radius: var(--radius); 
   transition: var(--transition);
   
@@ -422,12 +422,14 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .about-text h1 {
   font-size: 40px;
   line-height: 1.1;
-  margin: 20px 0;
+  margin: 8px 0 14px;
   color: var(--primary-color);
 }
 
