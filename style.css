@@ -238,8 +238,7 @@ body {
 }
 
 .values-logo {
-  width: 100px;
-  height: 100px;
+  max-height: 20px;
   background: #ffffff;
   border-radius: 22px;
   margin: auto;
@@ -251,8 +250,8 @@ body {
 }
 
 .values-logo img {
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 5%;
+  max-height: 5%;
   object-fit: contain;
   border-radius: 14px;
 }
