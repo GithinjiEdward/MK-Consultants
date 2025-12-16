@@ -172,7 +172,7 @@ body {
 
 .why-container {
   background: var(--service-bg); 
-  padding: 18px;
+  padding: 40px;
   border-radius: var(--radius); 
   transition: var(--transition);
   
@@ -234,7 +234,7 @@ body {
 
 /* RIGHT CONTENT */
 .section-eyebrow {
-  color: var(--accent-color);
+  color: var(--accent);
   font-size: 13px;
   letter-spacing: 1px;
 }
@@ -245,7 +245,7 @@ body {
 }
 
 .why-content p {
-  color: var(--accent-color);
+  color: var(--accent);
   line-height: 1.8;
   margin-bottom: 18px;
   max-width: 520px;
@@ -381,7 +381,7 @@ body {
 
 /* LEFT TEXT */
 .about-tag {
-  color: var(--accent-color);
+  color: var(--accent);
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 14px;
@@ -454,7 +454,13 @@ body {
   .about-container {
     grid-template-columns: 1fr;
   }
-
+  .why-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+    .values-image-wrapper img {
+    max-width: 320px;
+  }
   .about-text h1 {
     font-size: 34px;
   }
