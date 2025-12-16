@@ -192,10 +192,7 @@ body {
   width: fit-content;
   margin-bottom: 40px;
 }
-.values-visual {
-  text-align: center;
-  grid-column: 1;
-}
+
 .why-content {
  
     display: grid;
