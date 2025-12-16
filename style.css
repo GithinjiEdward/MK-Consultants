@@ -174,7 +174,7 @@ body {
   background: var(--service-bg); 
   padding: 40PX;
   border-radius: var(--radius); 
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1.1fr;
   gap: 60px;
   align-items: center;
@@ -189,10 +189,13 @@ body {
   width: fit-content;
   margin-bottom: 40px;
 }
-
+.value-visual {
+  flex: 0 0 45%;
+}
 .why-content {
   align-self: center;
   max-width: 520px;
+  flex: 0 0 55%;
 }
 .values-title {
   font-size: 22px;
