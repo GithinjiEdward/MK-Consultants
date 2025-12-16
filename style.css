@@ -176,8 +176,8 @@ body {
   border-radius: var(--radius); 
   transition: var(--transition);
   
-  display: grid; !important;
-  grid-template-columns: 1.1fr 1fr; !important;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -267,7 +267,10 @@ body {
     max-width: 320px;
     }
   .values-visual, .why-content {
-    grid-column: auto;
+    
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   }
 
   .why-content h2 {
