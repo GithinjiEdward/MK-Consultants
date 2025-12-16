@@ -176,8 +176,8 @@ body {
   border-radius: var(--radius); 
   transition: var(--transition);
   
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  display: grid; !important;
+  grid-template-columns: 1.1fr 1fr; !important;
   gap: 60px;
   align-items: center;
 }
@@ -195,8 +195,11 @@ body {
 }
 .values-visual {
   text-align: center;
+  grid-column: 1;
 }
-
+.why-content {
+  grid-column: 2;
+}
 .values-title {
   font-size: 22px;
   font-weight: 700;
@@ -218,19 +221,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.values-list li {
-  position: absolute;
-  font-size: 14px;
-  font-weight: 500;
-}
 
-.values-list .top { top: 10px; left: 50%; transform: translateX(-50%); }
-.values-list .right { right: 10px; top: 50%; transform: translateY(-50%); }
-.values-list .bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
-.values-list .left { left: 10px; top: 50%; transform: translateY(-50%); }
-
-.values-list .bottom-right { bottom: 40px; right: 40px; }
-.values-list .bottom-left { bottom: 40px; left: 40px; }
 
 /* RIGHT CONTENT */
 .section-eyebrow {
@@ -268,15 +259,15 @@ body {
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .why-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; !important;
     text-align: center;
   }
     .values-image-wrapper img {
     width: 100%;
     max-width: 320px;
     }
-  .values-card {
-    margin: 0 auto 40px;
+  .values-visual, .why-content {
+    grid-column: auto;
   }
 
   .why-content h2 {
@@ -393,7 +384,7 @@ body {
   font-size: 40px;
   line-height: 1.1;
   margin: 8px 0 14px;
-  color: var(--primary-color);
+  color: var(--primary);
 }
 
 .about-text p {
