@@ -198,7 +198,10 @@ body {
   grid-column: 1;
 }
 .why-content {
-  grid-column: 2;
+ 
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 .values-title {
   font-size: 22px;
