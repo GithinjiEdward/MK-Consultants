@@ -172,16 +172,13 @@ body {
 
 .why-container {
   background: var(--service-bg); 
-  padding: 12px 18px 18px;
+  padding: 40PX;
   border-radius: var(--radius); 
-  transition: var(--transition);
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
   gap: 60px;
   align-items: center;
 }
-
-
 
 /* LEFT: VALUES VISUAL */
 .values-label {
@@ -194,10 +191,7 @@ body {
 }
 
 .why-content {
- 
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+max-width: 520px;
 }
 .values-title {
   font-size: 22px;
@@ -262,12 +256,10 @@ body {
     text-align: center;
   }
     .values-image-wrapper img {
-    width: 100%;
     max-width: 320px;
     }
   .why-content {
-    
-      display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   }
