@@ -195,9 +195,9 @@ body {
 }
 .values-graphic { 
   position: relative; 
-  width: 500px; 
-  height: 500px; 
-  background: red; 
+  width: 5px; 
+  height: 5px; 
+  background: var(--accent-color);
   border-radius: 16px; 
   margin: auto; 
   display: flex; 
