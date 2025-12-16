@@ -265,7 +265,7 @@ body {
     width: 100%;
     max-width: 320px;
     }
-  .values-visual, .why-content {
+  .why-content {
     
       display: grid;
   grid-template-columns: repeat(2, 1fr);
