@@ -217,6 +217,7 @@ body {
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  margin-left: 40px;
 }
 
 
