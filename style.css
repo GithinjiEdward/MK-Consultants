@@ -358,6 +358,11 @@ body {
   background: var(--white);
 }
 
+.logo-page {
+  padding: 80px 10% 90px;
+  background: var(--white);
+}
+
 .about-container {
   background: var(--service-bg); 
   padding: 12px 18px 18px;
