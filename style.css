@@ -212,8 +212,8 @@ body {
 }
 
 .values-image-wrapper img {
-  max-width: 100%;
-  width: 420px;
+  max-width: 70%;
+  width: 320px;
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
