@@ -31,22 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  //ANOTHER TEST
+document.addEventListener("DOMContentLoaded", () => {
   const openMission = document.getElementById("openMission");
-const missionModal = document.getElementById("missionModal");
-const closeMission = document.getElementById("closeMission");
+  const modal = document.getElementById("missionModal");
+  const closeBtn = document.getElementById("closeMission");
 
-openMission.addEventListener("click", () => {
-  missionModal.classList.add("active");
-});
+  openMission.addEventListener("click", () => {
+    modal.classList.add("active");
+  });
 
-closeMission.addEventListener("click", () => {
-  missionModal.classList.remove("active");
-});
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
 
-missionModal.addEventListener("click", (e) => {
-  if (e.target === missionModal) {
-    missionModal.classList.remove("active");
-  }
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
 });
   
   // Footer year
