@@ -563,7 +563,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  z-index: 9999;
 }
 
 .modal.active {
@@ -590,7 +590,7 @@ body {
   line-height: 1.7;
 }
 
-.modal-close {
+.close {
   position: absolute;
   top: 12px;
   right: 16px;
