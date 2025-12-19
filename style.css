@@ -338,14 +338,6 @@ body {
   padding: 40px 30px; 
   text-align: center;
 } 
-
-  .about-card { 
-  background: var(--service-bg); 
-  padding: 18px; 
-  text-align: center; 
-  border-radius: var(--radius); 
-  transition: var(--transition); 
-} 
 .about h2 { 
   font-size: 28px; 
   color: var(--primary); 
