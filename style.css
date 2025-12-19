@@ -436,26 +436,10 @@ body {
   font-weight: 700;
 }
 
-/* Background placeholders (replace with images later) */
-.about-card.mission {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("images/mission.jpg") center/cover no-repeat;
-}
 
-.about-card.vision {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("images/vision.jpg") center/cover no-repeat;
-}
 
-.about-card.team {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("images/team.jpg") center/cover no-repeat;
-}
 
-.about-card.philosophy {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("images/philosophy.jpg") center/cover no-repeat;
-}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
