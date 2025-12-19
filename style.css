@@ -412,7 +412,7 @@ body {
 /* RIGHT GRID */
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 0.8fr, 1.2fr);
   gap: 20px;
 }
 
