@@ -265,11 +265,11 @@ body {
   }
 .values-image-wrapper img {
   max-width: 100%;
-  width: 320px;
+  width: 220px;
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-left: 50px;
+  margin-left: 10px;
     }
   .why-content {
     max-width: 100%
