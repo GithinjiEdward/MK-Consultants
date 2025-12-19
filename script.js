@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //ANOTHER TEST
 document.addEventListener("DOMContentLoaded", () => {
-  const openMission = document.getElementById("openMission");
+  const missionCard = document.getElementById("openMission");
   const modal = document.getElementById("missionModal");
   const closeBtn = document.getElementById("closeMission");
 
