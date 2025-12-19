@@ -465,6 +465,10 @@ body {
   .about-text h1 {
     font-size: 34px;
   }
+  .logo-page {
+  padding: 80px 20% 90px;
+  background: var(--white);
+}
 }
 
 /* ABOUT CARD HOVER EFFECTS */
