@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("missionModal");
   const closeBtn = document.getElementById("closeMission");
 
-  openMission.addEventListener("click", () => {
+  missionCard.addEventListener("click", () => {
     modal.classList.add("active");
   });
 
