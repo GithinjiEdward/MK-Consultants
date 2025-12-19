@@ -364,7 +364,7 @@ body {
 }
 
 .logo-page {
-  padding: 80px 20% 90px;
+  padding: 80px 10% 90px;
   background: var(--white);
 }
 
@@ -466,7 +466,7 @@ body {
     font-size: 34px;
   }
   .logo-page {
-  padding: 80px 20% 90px;
+  padding: 80px 8% 90px;
   background: var(--white);
 }
 }
