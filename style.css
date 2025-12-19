@@ -540,7 +540,34 @@ body {
 } 
 .contact button:hover { 
   background: #1a223d; 
-} 
+}
+
+/* ============================================================ 
+                CARD BACKGROUNDS
+============================================================ */ 
+.mission {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/mission.png") center / cover no-repeat;
+}
+
+.vision {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/vision.jpg") center / cover no-repeat;
+}
+
+.team {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/team.jpg") center / cover no-repeat;
+}
+
+.philosophy {
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/philosophy.jpg") center / cover no-repeat;
+}
 
 /* ============================================================ 
                 MODAL
@@ -588,7 +615,7 @@ body {
 }
 
 /* ============================================================ 
-                MODAL
+                ANIMATION
 ============================================================ */
 @keyframes scaleIn {
   from {
