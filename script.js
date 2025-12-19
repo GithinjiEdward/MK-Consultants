@@ -31,6 +31,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  const openMission = document.getElementById("openMission");
+const missionModal = document.getElementById("missionModal");
+const closeMission = document.getElementById("closeMission");
+
+openMission.addEventListener("click", () => {
+  missionModal.classList.add("active");
+});
+
+closeMission.addEventListener("click", () => {
+  missionModal.classList.remove("active");
+});
+
+missionModal.addEventListener("click", (e) => {
+  if (e.target === missionModal) {
+    missionModal.classList.remove("active");
+  }
+});
   
   // Footer year
   const currentYear = document.getElementById('current-year');
