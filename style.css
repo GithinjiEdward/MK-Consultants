@@ -554,13 +554,13 @@ body {
 .vision {
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("images/vision.jpg") center / cover no-repeat;
+    url("images/vision.png") center / cover no-repeat;
 }
 
 .team {
   background:
     linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("images/team.jpg") center / cover no-repeat;
+    url("images/our_team.jpg") center / cover no-repeat;
 }
 
 .philosophy {
