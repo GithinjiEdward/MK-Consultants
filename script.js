@@ -56,7 +56,16 @@ document.addEventListener('keydown', e => {
   }
 });
 
-  
+  // SERVICES DROPDOWN (MOBILE TAP)
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', e => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      toggle.parentElement.classList.toggle('open');
+    }
+  });
+});
+
 
   // FOOTER YEAR
   const currentYear = document.getElementById('current-year');
