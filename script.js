@@ -25,25 +25,38 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ===== MODAL LOGIC (THIS NOW WORKS) =====
-  const openMission = document.getElementById("openMission");
-  const missionModal = document.getElementById("missionModal");
-  const closeMission = document.getElementById("closeMission");
+document.querySelectorAll('.about-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const modalId = card.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.add('active');
+  });
+});
 
-  if (openMission && missionModal && closeMission) {
-    openMission.addEventListener("click", () => {
-      missionModal.classList.add("active");
-    });
+// CLOSE BUTTON
+document.querySelectorAll('.modal .close').forEach(closeBtn => {
+  closeBtn.addEventListener('click', () => {
+    closeBtn.closest('.modal').classList.remove('active');
+  });
+});
 
-    closeMission.addEventListener("click", () => {
-      missionModal.classList.remove("active");
-    });
+// CLICK OUTSIDE TO CLOSE
+document.querySelectorAll('.modal').forEach(modal => {
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.classList.remove('active');
+  });
+});
 
-    missionModal.addEventListener("click", (e) => {
-      if (e.target === missionModal) {
-        missionModal.classList.remove("active");
-      }
+// ESC KEY TO CLOSE
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal.active').forEach(modal => {
+      modal.classList.remove('active');
     });
   }
+});
+
+  
 
   // FOOTER YEAR
   const currentYear = document.getElementById('current-year');
