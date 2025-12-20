@@ -1,11 +1,6 @@
-// Smooth scroll helper
-function scrollToSection(sectionId) { 
-  const target = document.getElementById(sectionId); 
-  if (target) target.scrollIntoView({ behavior: 'smooth' }); 
-}
-
 document.addEventListener('DOMContentLoaded', function () {
-  // Smooth scrolling for navbar links
+
+  // Smooth scrolling
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e){
       e.preventDefault();
@@ -15,50 +10,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Contact form
+  // CONTACT FORM
   const contactForm = document.getElementById('contactForm');
   if(contactForm){
     contactForm.addEventListener('submit', function(e){
       e.preventDefault();
       const formMessage = document.getElementById("formMessage");
       if(formMessage){
-        formMessage.innerText = "Thank you! Your message has been received. We will be in touch soon.";
+        formMessage.innerText = "Thank you! Your message has been received.";
         formMessage.style.color = "#273153";
-      } else {
-        alert("Thank you! Your message has been received.");
       }
       contactForm.reset();
     });
   }
 
-  //ANOTHER TEST
-document.addEventListener("DOMContentLoaded", () => {
-const openMission = document.getElementById("openMission");
-const missionModal = document.getElementById("missionModal");
-const closeMission = document.getElementById("closeMission");
+  // ===== MODAL LOGIC (THIS NOW WORKS) =====
+  const openMission = document.getElementById("openMission");
+  const missionModal = document.getElementById("missionModal");
+  const closeMission = document.getElementById("closeMission");
 
-// OPEN MODAL
-openMission.addEventListener("click", () => {
-  missionModal.classList.add("active");
-});
+  if (openMission && missionModal && closeMission) {
+    openMission.addEventListener("click", () => {
+      missionModal.classList.add("active");
+    });
 
-// CLOSE MODAL (X)
-closeMission.addEventListener("click", () => {
-  missionModal.classList.remove("active");
-});
+    closeMission.addEventListener("click", () => {
+      missionModal.classList.remove("active");
+    });
 
-// CLOSE MODAL (CLICK OUTSIDE)
-missionModal.addEventListener("click", (e) => {
-  if (e.target === missionModal) {
-    missionModal.classList.remove("active");
+    missionModal.addEventListener("click", (e) => {
+      if (e.target === missionModal) {
+        missionModal.classList.remove("active");
+      }
+    });
   }
-});
-  
-  // Footer year
+
+  // FOOTER YEAR
   const currentYear = document.getElementById('current-year');
   if(currentYear) currentYear.textContent = new Date().getFullYear();
 
-  // Hamburger menu toggle
+  // HAMBURGER MENU
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
   if(hamburger && navLinks){
