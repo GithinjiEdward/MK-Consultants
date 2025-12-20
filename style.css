@@ -489,11 +489,13 @@ footer {
       min-height: 140px;
    }
    
-  .about-container,
-   .about-page-container, {
+  .about-container {
     grid-template-columns: 1fr;
   }
-      .logo-page-container {
+   .about-page-container {
+    grid-template-columns: 1.1fr;
+   }
+   .logo-page-container {
     grid-template-columns: 1.1fr;
       }
 }
