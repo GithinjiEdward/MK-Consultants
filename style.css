@@ -197,31 +197,65 @@ body {
 /* ============================================================
    5. ABOUT PAGE (DETAILED)
 ============================================================ */
-.about-page,
+.about-us {
+   background: var(--white);
+   padding: 40px 30px;
+   text-align: center;
+}
+
+.about-page {
+   padding: 60px 8% 80px;
+   background: var(-white);
+}
+
 .logo-page {
   background: var(--white);
-  padding: 70px 8%;
+  padding: 80px 8% 90px;
+}
+
+.logo-grid { 
+   display: grid; 
+   grid-template-columns: repeat(2, 0.8fr, 1.2fr); 
+   gap: 20px; 
 }
 
 .about-container {
-  background: var(--service-bg);
-  padding: 18px;
-  border-radius: var(--radius);
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  align-items: center;
+   background: var(--service-bg);
+   padding: 12px 18px 18px;
+   border-radius: var(--radius);
+   display: grid;
+   grid-template-columns: 1.1fr 1fr;
+   gap: 60px;
+   align-items: center;
+   transition: var(--transition);
 }
 
 .about-tag {
-  color: var(--accent);
-  font-weight: 600;
-  letter-spacing: 1px;
+   color: var(--accent); 
+   font-weight: 600; 
+   letter-spacing: 1px; 
+   font-size: 14px; 
+   display: block; 
+   margin-bottom: 8px;
 }
 
 .about-text h1 {
-  font-size: 40px;
-  margin: 10px 0 15px;
+   font-size: 40px;
+   line-height: 1.1;
+   margin: 8px 0 14px;
+   color: var(--primary);
+}
+
+.about h2 { 
+   font-size: 28px; 
+   color: var(--primary); 
+   margin-bottom: 12px; 
+}
+.about p { 
+   font-size: 16px; 
+   max-width: 750px; 
+   margin: auto; 
+   color: var(--text-dark); 
 }
 
 .about-grid {
@@ -230,25 +264,48 @@ body {
   gap: 20px;
 }
 
-/* Cards */
+.about-text h1 { 
+   font-size: 40px; 
+   line-height: 1.1; 
+   margin: 8px 0 14px; 
+   color: var(--primary); 
+} 
+
+.about-text p { 
+   color: #555; 
+   line-height: 1.7; 
+   margin-bottom: 18px; 
+} 
+
+.about-highlight { 
+   font-style: italic; 
+   font-weight: 600; 
+   color: #222; 
+}
+
+/* ------------------- Cards --------------------------- */
 .about-card {
-  height: 180px;
-  border-radius: var(--radius);
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   position: relative;
+   height: 180px;
+   border-radius: var(--radius);
+   display: flex;
+   overflow: hidden;
+   align-items: flex-end;
+   padding: 20px;
+   color: #fff;
+   font-weight: 700;
+   transition: var(--transition);
+   text-align: center;
+   cursor: pointer;
+   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .about-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
-/* Backgrounds */
+/* ---------------------- Backgrounds ---------------------------- */
 .mission { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/mission.png") center/cover; }
 .vision { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/vision.png") center/cover; }
 .team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
@@ -272,11 +329,24 @@ body {
 }
 
 .modal-content {
-  background: var(--white);
-  padding: 30px;
-  max-width: 500px;
-  border-radius: var(--radius);
-  text-align: center;
+   background: var(--white);
+   padding: 30px;
+   max-width: 500px;
+   border-radius: var(--radius);
+   text-align: center;
+   box-shadow: var(--shadow);
+   position: relative;
+   animation: scaleIn 0.3s ease;
+}
+
+.modal-content h2 { 
+   color: var(--primary); 
+   margin-bottom: 15px; 
+} 
+
+.modal-content p { 
+   line-height: 1.6; 
+   color: var(--text-dark); 
 }
 
 .close {
@@ -303,6 +373,18 @@ body {
   gap: 8px;
 }
 
+/* -------------------------- ANIMATION ---------------- */ 
+@keyframes scaleIn { 
+   from { 
+      transform: scale(0.9); 
+      opacity: 0; 
+   } 
+   to { 
+      transform: scale(1); 
+      opacity: 1; 
+   } 
+}
+
 /* ============================================================
    8. FOOTER
 ============================================================ */
@@ -313,11 +395,43 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.footer-column { 
+   min-width: 150px; 
+} 
+
+.footer-column h3 { 
+   color: var(--accent);
+   margin-bottom: 6px; 
+} 
+
+.footer-column a { 
+   color: var(--white); 
+   text-decoration: none; 
+   transition: color var(--transition); 
+} 
+
+.footer-column a:hover { 
+   color: var(--accent); 
+} 
+
+.social-links i { 
+   font-size: 16px; 
+   margin-right: 8px; 
+} 
+
+.footer-bottom { 
+   border-top: 1px solid #4a4a4a; 
+   text-align: center; 
+   padding-top: 6px; 
+   margin-top: 8px; 
 }
 
 /* ============================================================
@@ -342,6 +456,16 @@ footer {
     display: flex;
   }
 
+   .values-image-wrapper img { 
+      max-width: 320px; 
+   }
+
+   .logo-page { 
+      padding: 80px 8% 90px; 
+      background: var(--white); 
+      position: relative; 
+   }
+   
   .about-container {
     grid-template-columns: 1fr;
   }
