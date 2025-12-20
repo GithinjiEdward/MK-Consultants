@@ -492,6 +492,6 @@ footer {
   .about-container,
    .about-page-container, 
    .logo-page-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.1fr;
   }
 }
