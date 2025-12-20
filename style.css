@@ -2,13 +2,13 @@
    1. ROOT VARIABLES & RESET
 ============================================================ */
 :root {
-  --primary: #273153;
-  --accent: #d9c179;
-  --light-bg: #f7f7f7;
-  --service-bg: #eef3f9;
-  --card-bg: #f0f6ff;
-  --white: #d9d9d9;
-  --text-dark: #333;
+  --primary: #273153; /*Navy Blue*/
+  --accent: #d9c179; /*Gold*/
+  --light-bg: #f7f7f7; /*Gray 97*/
+  --service-bg: #eef3f9; /*Light Blue*/
+  --card-bg: #f0f6ff; /*Alice Blue*/
+  --white: #d9d9d9; /*Gray 85*/
+  --text-dark: #333; /*Dark Gray*/
 
   --radius: 10px;
   --transition: 0.3s ease;
@@ -44,7 +44,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navbar {
     position: sticky;
     top: 0;
@@ -439,13 +439,18 @@ footer {
 ============================================================ */
 @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: var(--white);
-    flex-direction: column;
-    display: none;
-    padding: 12px;
+     gap: 15px;
+     position: absolute;
+     top: 60px;
+     right: 20px;
+     background: var(--white);
+     width: 200px;
+     flex-direction: column;
+     display: none;
+     padding: 12px 18px;
+     norder-radius: var(--radius);
+     box-shadow: var(--shadow);
+     z-index:100;
   }
 
   .nav-links.active {
