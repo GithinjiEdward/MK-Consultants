@@ -207,7 +207,18 @@ body {
 
 .about-page {
    padding: 60px 8% 80px;
+   background: var(--white);
+}
+
+.about-page-container {
    background: var(--service-bg);
+   padding: 12px 18px 18px; 
+   border-radius: var(--radius); 
+   transition: var(--transition); 
+   display: grid; 
+   grid-template-columns: 1.1fr 1fr; 
+   gap: 60px; 
+   align-items: center; 
 }
 
 .logo-page {
