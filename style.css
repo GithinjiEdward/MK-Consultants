@@ -473,7 +473,8 @@ footer {
       position: relative; 
    }
    
-  .about-container {
+  .about-container,
+   .about-page-container {
     grid-template-columns: 1fr;
   }
 }
