@@ -157,6 +157,7 @@ body {
 }
 
 .service-container,
+.about-container,
 .value-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -217,17 +218,6 @@ body {
    display: grid; 
    grid-template-columns: repeat(2, 0.8fr, 1.2fr); 
    gap: 20px; 
-}
-
-.about-container {
-   background: var(--service-bg);
-   padding: 12px 18px 18px;
-   border-radius: var(--radius);
-   display: grid;
-   grid-template-columns: 1.1fr 1fr;
-   gap: 60px;
-   align-items: center;
-   transition: var(--transition);
 }
 
 .about-tag {
