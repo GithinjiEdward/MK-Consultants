@@ -175,6 +175,12 @@ body {
   box-shadow: var(--shadow);
 }
 
+.partner-icon {
+   font-size: 34px;
+   color: var(--accent);
+   margin-bottom: 10px;
+}
+
 /* ============================================================
    5. ABOUT PAGE (DETAILED)
 ============================================================ */
