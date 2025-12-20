@@ -33,23 +33,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //ANOTHER TEST
 document.addEventListener("DOMContentLoaded", () => {
-  const missionCard = document.getElementById("openMission");
-  const modal = document.getElementById("missionModal");
-  const closeBtn = document.getElementById("closeMission");
+const openMission = document.getElementById("openMission");
+const missionModal = document.getElementById("missionModal");
+const closeMission = document.getElementById("closeMission");
 
-  missionCard.addEventListener("click", () => {
-    modal.classList.add("active");
-  });
+// OPEN MODAL
+openMission.addEventListener("click", () => {
+  missionModal.classList.add("active");
+});
 
-  closeBtn.addEventListener("click", () => {
-    modal.classList.remove("active");
-  });
+// CLOSE MODAL (X)
+closeMission.addEventListener("click", () => {
+  missionModal.classList.remove("active");
+});
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("active");
-    }
-  });
+// CLOSE MODAL (CLICK OUTSIDE)
+missionModal.addEventListener("click", (e) => {
+  if (e.target === missionModal) {
+    missionModal.classList.remove("active");
+  }
 });
   
   // Footer year
