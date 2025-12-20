@@ -198,13 +198,11 @@ body {
    5. ABOUT PAGE (DETAILED)
 ============================================================ */
 .about { 
-   background: var(--white); 
    padding: 40px 30px; 
    text-align: center; 
 }
 
 .about-us {
-   background: var(--service-bg);
    padding: 40px 30px;
    text-align: center;
 }
