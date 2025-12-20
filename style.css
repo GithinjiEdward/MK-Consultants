@@ -151,6 +151,11 @@ body {
   margin-bottom: 25px;
 }
 
+.service-card h3 {
+   margin-bottom: 10px;
+   color: var(--primary);
+}
+
 .service-container,
 .value-container {
   display: grid;
@@ -181,6 +186,13 @@ body {
    margin-bottom: 10px;
 }
 
+.service-icon { 
+   width: 40px; 
+   height: 40px; 
+   margin: auto; 
+   display: block; 
+   margin-bottom: 10px; 
+}
 
 /* ============================================================
    5. ABOUT PAGE (DETAILED)
