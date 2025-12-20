@@ -125,6 +125,8 @@ body {
    text-transform: uppercase;
    transition: transform var(--transition), box-shadow var(--transition);
    width: fit-content;
+   display: inline-block;
+   margin-top: 10px;
 }
 
 .btn-primary: hover {
@@ -152,7 +154,7 @@ body {
 .service-container,
 .value-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 15px;
   max-width: 1200px;
   margin: auto;
@@ -160,10 +162,11 @@ body {
 
 .service-card,
 .value-card {
-  background: var(--service-bg);
-  padding: 18px;
-  border-radius: var(--radius);
-  transition: var(--transition);
+   background: var(--service-bg);
+   padding: 18px;
+   border-radius: var(--radius);
+   transition: var(--transition);
+   border-bottom: 4px solid var(--accent);
 }
 
 .service-card:hover,
