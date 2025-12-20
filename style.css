@@ -205,7 +205,7 @@ body {
 
 .about-page {
    padding: 80px 8% 90px;
-   background: var(-white);
+   background: var(--white);
 }
 
 .logo-page {
