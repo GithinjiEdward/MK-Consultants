@@ -167,6 +167,7 @@ body {
 }
 
 .service-card,
+.about-card,
 .value-card {
    background: var(--service-bg);
    padding: 18px;
