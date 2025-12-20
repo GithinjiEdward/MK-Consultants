@@ -210,7 +210,8 @@ body {
    background: var(--white);
 }
 
-.about-page-container {
+.about-page-container 
+.logo-page-container {
    background: var(--service-bg);
    padding: 12px 18px 18px; 
    border-radius: var(--radius); 
@@ -228,7 +229,7 @@ body {
 
 .logo-grid { 
    display: grid; 
-   grid-template-columns: repeat(2, 0.8fr, 1.2fr); 
+   grid-template-columns: 0.8fr, 1.2fr; 
    gap: 20px; 
 }
 
@@ -450,7 +451,7 @@ footer {
      flex-direction: column;
      display: none;
      padding: 12px 18px;
-     norder-radius: var(--radius);
+     border-radius: var(--radius);
      box-shadow: var(--shadow);
      z-index:100;
   }
@@ -472,9 +473,15 @@ footer {
       background: var(--white); 
       position: relative; 
    }
+
+   .about-card {
+      height: auto;
+      min-height: 140px;
+   }
    
   .about-container,
-   .about-page-container {
+   .about-page-container 
+   .logo-page-container {
     grid-template-columns: 1fr;
   }
 }
