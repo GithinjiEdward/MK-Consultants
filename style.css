@@ -210,7 +210,7 @@ body {
    background: var(--white);
 }
 
-.about-page-container 
+.about-page-container, 
 .logo-page-container {
    background: var(--service-bg);
    padding: 12px 18px 18px; 
@@ -480,7 +480,7 @@ footer {
    }
    
   .about-container,
-   .about-page-container 
+   .about-page-container, 
    .logo-page-container {
     grid-template-columns: 1fr;
   }
