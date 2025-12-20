@@ -1,5 +1,5 @@
 /* ============================================================ 
-              GLOBAL STYLES + VARIABLES 
+              1. GLOBAL STYLES + VARIABLES 
 ============================================================ */ 
 :root { 
   --primary: #273153; /* Navy */ 
@@ -33,7 +33,7 @@ body {
 } 
 
 /* ============================================================ 
-                  NAVIGATION BAR 
+                  2. NAVIGATION BAR 
 ============================================================ */ 
 .navbar { 
   display: flex; 
@@ -88,7 +88,7 @@ body {
 }
 
 /* ============================================================ 
-                    HERO SECTION 
+                    3. HERO SECTION 
 ============================================================ */ 
 .hero { 
   height: 85vh; 
@@ -119,32 +119,35 @@ body {
   text-transform: uppercase; 
   cursor: pointer; 
   transition: transform var(--transition), box-shadow var(--transition); 
-  width: fit-content; 
+  width: fit-content;
+  display: inline-block;
+  margin-top: 10px;
 } 
 .btn-primary:hover { 
   transform: translateY(-3px); 
   box-shadow: var(--shadow); 
 } 
 /* ============================================================ 
-            WHY PARTNER WITH US 
+            4. WHY PARTNER WITH US 
 ============================================================ */ 
+.services,
 .partner-us-section { 
   background: var(--white); 
   padding: 40px 30px; 
   text-align: center;
+  display: inline-block;
+  margin-top: 10px;
 } 
 .partner-us-section p {
   margin-bottom: 25px;
 }
-.partner-us-section .btn-primary {
-  display: inline-block;
-  margin-top: 10px;
-}
+.services h2,
 .partner-us-section h2 { 
   font-size: 28px; 
   color: var(--primary); 
   margin-bottom: 25px; 
 } 
+.service-container,
 .value-container { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
@@ -152,6 +155,7 @@ body {
   max-width: 1200px; 
   margin: auto; 
 } 
+.service-card,
 .value-card { 
   background: var(--card-bg); 
   padding: 20px; 
@@ -159,6 +163,7 @@ body {
   border-bottom: 4px solid var(--accent); 
   transition: var(--transition); 
 } 
+.service-card:hover,
 .value-card:hover { 
   transform: translateY(-2px); 
   box-shadow: var(--shadow); 
@@ -168,62 +173,11 @@ body {
   color: var(--accent); 
   margin-bottom: 10px; 
 } 
-
-.why-choose {
-  padding: 100px 8%;
-  background: var(--white);
-}
-
-.why-container {
-  background: var(--service-bg); 
-  padding: 40PX;
-  border-radius: var(--radius); 
-  display: flex;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-/* LEFT: VALUES VISUAL */
-.values-label {
-  background: linear-gradient(90deg, #00c6ff, #6a5cff);
-  padding: 12px 18px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  width: fit-content;
-  margin-bottom: 40px;
-}
-.value-visual {
-  flex: 0 0 45%;
-}
-.why-content {
-  align-self: center;
-  max-width: 520px;
-  flex: 0 0 55%;
-}
-.values-title {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: var(--primary);
-  margin-bottom: 25px;
-}
-
 .values-image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.values-image-wrapper img {
-  max-width: 100%;
-  width: 520px;
-  height: auto;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  margin-left: 100px;
-}
-
 
 /* RIGHT CONTENT */
 .section-eyebrow {
