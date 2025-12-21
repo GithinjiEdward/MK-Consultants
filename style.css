@@ -110,7 +110,7 @@ body {
               center/cover no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 120px 100px 0;
 }
 
