@@ -95,6 +95,17 @@ body {
 .hero {
   height: 85vh;
   background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
+              url('images/it.jpg')
+              center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.it-hero {
+  height: 85vh;
+  background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
               url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d')
               center/cover no-repeat;
   display: flex;
