@@ -406,6 +406,16 @@ body {
    background: var(--white);
 }
 
+.it-page-container {
+   background: var(--service-bg);
+   padding: 12px 18px 18px; 
+   border-radius: var(--radius); 
+   transition: var(--transition); 
+   display: grid; 
+   grid-template-columns: 1.1fr 1fr; 
+   gap: 60px; 
+   align-items: center;
+}
 
 /* ============================================================
    6. MODALS
