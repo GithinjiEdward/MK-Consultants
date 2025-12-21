@@ -114,13 +114,15 @@ body {
   padding: 30px 100px 0;
 }
 
-.hero h1 {
+.hero h1,
+.it-hero h1 {
   font-size: 40px;
   margin-bottom: 12px;
   color: var(--primary);
 }
 
-.hero p {
+.hero p,
+.it-hero p {
   font-size: 17px;
   margin-bottom: 20px;
 }
