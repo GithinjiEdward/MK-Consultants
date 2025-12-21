@@ -104,13 +104,13 @@ body {
 }
 
 .it-hero {
-  height: 65vh;
+  height: 55vh;
   background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
               url('images/it.jpg') center/ cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px 100px 0;
+  padding: 30px 100px 0;
 }
 
 .hero h1 {
