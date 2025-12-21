@@ -393,6 +393,21 @@ body {
 .philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
 
 /* ============================================================
+   6. IT SERVICE PAGE (DETAILED)
+============================================================ */
+.about {
+  background: var(--white);
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.it-page {
+   padding: 60px 8% 80px;
+   background: var(--white);
+}
+
+
+/* ============================================================
    6. MODALS
 ============================================================ */
 .modal {
