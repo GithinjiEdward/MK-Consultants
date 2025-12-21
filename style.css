@@ -111,18 +111,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px 100px 0;
+  padding: 8px 100px 0;
 }
 
 .hero h1 {
   font-size: 40px;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
   color: var(--primary);
 }
 
 .it-hero h1 {
   font-size: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   color: var(--primary);
 }
 
