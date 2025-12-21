@@ -111,7 +111,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 120px 100px 0;
+  padding: 20px 100px 0;
 }
 
 .hero h1 {
