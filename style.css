@@ -446,7 +446,7 @@ body {
 }
 
 /* ---------------------- Backgrounds ---------------------------- */
-.it { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/repair.jpg") center/cover; }
+.mission { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/repair.jpg") center/cover; }
 .vision { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/vision.png") center/cover; }
 .team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
 .philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
