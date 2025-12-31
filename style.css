@@ -418,6 +418,20 @@ body {
    align-items: center;
 }
 
+/* ---------------------- Backgrounds ---------------------------- */
+                        /* Computer Repair */
+.it-page .mission { background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/repair.jpg") center/cover no-repeat;
+}
+                  /* Network & Infrastructure */
+.it-page .vision { background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/network.jpg") center/cover no-repeat;
+}
+                  /* IT Support / Helpdesk */
+.it-page .team { background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/support.jpg") center/cover no-repeat;
+}
+               /* Cybersecurity / Strategy */
+.it-page .philosophy { background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/security.jpg") center/cover no-repeat;
+}
+
 /* ============================================================
    6. MODALS
 ============================================================ */
