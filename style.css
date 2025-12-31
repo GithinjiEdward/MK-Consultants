@@ -424,7 +424,7 @@ body {
 }
 
 /* ------------------- Cards --------------------------- */
-.about-card {
+.it-card {
    position: relative;
    height: 180px;
    border-radius: var(--radius);
