@@ -401,6 +401,12 @@ body {
   text-align: center;
 }
 
+.it-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .it-page {
    padding: 60px 10% 80px;
    background: var(--white);
@@ -416,6 +422,34 @@ body {
    gap: 60px; 
    align-items: center;
 }
+
+/* ------------------- Cards --------------------------- */
+.about-card {
+   position: relative;
+   height: 180px;
+   border-radius: var(--radius);
+   display: flex;
+   overflow: hidden;
+   align-items: flex-end;
+   padding: 20px;
+   background: var(--service-bg);
+   font-weight: 700;
+   transition: var(--transition);
+   text-align: center;
+   cursor: pointer;
+   transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* ---------------------- Backgrounds ---------------------------- */
+.mission { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/mission.png") center/cover; }
+.vision { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/vision.png") center/cover; }
+.team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
+.philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
 
 /* ============================================================
    6. MODALS
