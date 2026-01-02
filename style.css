@@ -418,7 +418,7 @@ body {
 }
 
 .it-page .about-card span {
-   font-size: 11px;          /* slightly larger */
+   font-size: 12px;          /* slightly larger */
    font-weight: 700;         /* bold */
    color: var(--accent);
    display: block;
