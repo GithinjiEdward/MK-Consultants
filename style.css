@@ -401,7 +401,6 @@ body {
   text-align: center;
 }
 
-
 .it-page {
    padding: 60px 10% 80px;
    background: var(--white);
@@ -419,12 +418,13 @@ body {
 }
 
 .it-page .about-card span {
-  font-size: 13px;          /* slightly larger */
-  font-weight: 500;         /* bold */
+  font-size: 11px;          /* slightly larger */
+  font-weight: 400;         /* bold */
   color: var(--accent);     
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
+   transform: translateY(12px);
 }
 
 /* ---------------------- Backgrounds ---------------------------- */
