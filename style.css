@@ -392,6 +392,12 @@ body {
 .team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
 .philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
 
+
+.it-page + .it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/networking.jpg") center/cover;}
+.it-page + .it-page .vision { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/lan_wan.jpg") center/cover;}
+.it-page + .it-page .team { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/wireless.jpg") center/cover;}
+.it-page + .it-page .philosophy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/network_security.jpg") center/cover;}
+
 /* ============================================================
    6. IT SERVICE PAGE (DETAILED)
 ============================================================ */
