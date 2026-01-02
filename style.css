@@ -429,17 +429,13 @@ body {
 
 /* ---------------------- Backgrounds ---------------------------- */
                         /* Computer Repair */
-.it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair.jpg") center/cover no-repeat;
-}
-                  /* Network & Infrastructure */
-.it-page .vision { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;
-}
+.it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair.jpg") center/cover no-repeat;}
+                  /* IT Asset Management */
+.it-page .vision { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;}
                   /* IT Support / Helpdesk */
-.it-page .team { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/support.jpg") center/cover no-repeat;
-}
+.it-page .team { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_support.jpg") center/cover no-repeat;}
                /* Cybersecurity / Strategy */
-.it-page .philosophy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/security.jpg") center/cover no-repeat;
-}
+.it-page .philosophy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/security.jpg") center/cover no-repeat;}
 
 /* ============================================================
    7. MODALS
