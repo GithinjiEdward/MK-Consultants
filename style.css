@@ -407,7 +407,7 @@ body {
 }
 
 .it-page + .it-page {
-   padding-top: 3px;
+   padding-top: 1px;
 }
 
 .it-page-container {
