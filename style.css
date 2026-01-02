@@ -419,7 +419,7 @@ body {
 
 .it-page .about-card span {
    font-size: 11px;          /* slightly larger */
-   font-weight: 800;         /* bold */
+   font-weight: 700;         /* bold */
    color: var(--accent);
    display: block;
    width: 100%;
