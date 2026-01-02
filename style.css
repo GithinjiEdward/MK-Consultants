@@ -413,7 +413,11 @@ body {
 }
 
 .it-page + .it-page {
-   padding-top: 1px;
+   padding-top: 20px;
+}
+
+.it-page:not(:last-of-type) {
+   padding-bottom: 30px; /* reduce bottom padding of section 1 */
 }
 
 .it-page-container {
