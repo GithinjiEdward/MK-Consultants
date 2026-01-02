@@ -406,6 +406,10 @@ body {
    background: var(--white);
 }
 
+.it-page + .it-page {
+   padding-top: 30px;
+}
+
 .it-page-container {
    background: var(--service-bg);
    padding: 12px 18px 18px; 
